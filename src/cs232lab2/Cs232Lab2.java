@@ -15,8 +15,11 @@ public class Cs232Lab2 {
 
     public static void main(String[] args) {
        try{
-        File inputFile
+        File inputFile = new File("lab2_input-1.txt");
+        Scanner sc = new Scanner(inputFile);
 
+
+        
 
        }
        catch(FileNotFoundException e){
