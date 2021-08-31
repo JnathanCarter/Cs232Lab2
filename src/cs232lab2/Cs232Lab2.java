@@ -5,6 +5,8 @@
  */
 package cs232lab2;
 
+//import java.time.format.TextStyle;
+
 /**
  *
  * @author johnc
@@ -15,7 +17,8 @@ public class Cs232Lab2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       //this is a test
+
     }
     
 }
