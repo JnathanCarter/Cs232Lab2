@@ -5,6 +5,7 @@
 package cs232lab2;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 /**
@@ -30,6 +31,9 @@ public class Cs232Lab2 {
        catch(FileNotFoundException e){
             System.out.println("An error has occured");
             e.printStackTrace();
+        }
+        catch(NoSuchElementException e){
+            //System.out.println("All of file read");
         }
         /*
         int temp =  sc.nextline;
