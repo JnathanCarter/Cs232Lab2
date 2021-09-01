@@ -14,21 +14,18 @@ import java.util.ArrayList;
  * @author johnc
  */
 public class Cs232Lab2 {
+    static File inputFile = new File("lab2_input-1.txt");
     int num_items = 0;
-    static ArrayList<Integer> numbers = new ArrayList<Integer>();
     public static void main(String[] args) {
         
-        /*
-        int temp =  sc.nextline;
-        System.out.println(temp);
-        */
-        
+       ArrayList<Integer>numbers = readFileIntoArrayList();
+       
         
     }
-    public static void readFile(){
+    public static ArrayList<Integer> readFileIntoArrayList(){
+        ArrayList<Integer>numbers = new ArrayList<Integer>();
         
         try{
-            File inputFile = new File("lab2_input-1.txt");
             Scanner sc = new Scanner(inputFile);
             while(sc.hasNextLine()){
                 int temp =  sc.nextInt();
@@ -39,6 +36,7 @@ public class Cs232Lab2 {
             System.out.println(numbers.get(i));               
             }
             sc.close();
+            
         //System.out.println(temp);
         }
         catch(FileNotFoundException e){
@@ -48,6 +46,7 @@ public class Cs232Lab2 {
         catch(NoSuchElementException e){
             //System.out.println("All of file read");
         }   
+        return numbers;
     }   
 }
 
