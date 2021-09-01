@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 /**
  * 
@@ -14,16 +15,19 @@ import java.util.Scanner;
  */
 public class Cs232Lab2 {
     int num_items = 0;
-  //  ArrayList<int> numbers = new ArrayList<int>();
+    static ArrayList<Integer> numbers = new ArrayList<Integer>();
     public static void main(String[] args) {
        try{
         File inputFile = new File("lab2_input-1.txt");
         Scanner sc = new Scanner(inputFile);
         while(sc.hasNextLine()){
             int temp =  sc.nextInt();
+            numbers.add(temp);
 
-
-            System.out.println(temp);
+            //System.out.println(temp);
+            for (int i = 0 ; i < numbers.size(); i++){
+                System.out.println(numbers.get(i));
+            }
         }
         sc.close();
 
@@ -35,6 +39,7 @@ public class Cs232Lab2 {
         catch(NoSuchElementException e){
             //System.out.println("All of file read");
         }
+
         /*
         int temp =  sc.nextline;
         System.out.println(temp);
