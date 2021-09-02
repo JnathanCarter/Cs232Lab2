@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * @author johnc
  */
 public class Cs232Lab2 {
-   // static File inputFile = new File("lab2_input-1.txt");
+    static File inputFile = new File("lab2_input-1.txt");
     int num_items = 0;
     public static void main(String[] args) {
        File inputFile = new File("lab2_input-1.txt");
@@ -22,7 +22,7 @@ public class Cs232Lab2 {
        
         
     }
-    public static ArrayList<Integer> readFileIntoArrayList(File inputFile){
+    public static ArrayList<Integer> readFileIntoArrayList(){
         ArrayList<Integer>numbers = new ArrayList<Integer>();
         
         try{
