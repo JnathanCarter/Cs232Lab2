@@ -19,7 +19,9 @@ public class Cs232Lab2 {
     public static void main(String[] args) {
        File inputFile = new File("lab2_input-1.txt");
        ArrayList<Integer>numbers = readFileIntoArrayList();
-       
+       for(int i = 0; i< numbers.size();i++){
+           System.out.println(numbers.get(i));
+       }
         
     }
     public static ArrayList<Integer> readFileIntoArrayList(){
