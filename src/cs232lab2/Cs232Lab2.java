@@ -61,6 +61,7 @@ public class Cs232Lab2 {
         return numbers;
     }   
 
+    // does fancy shit but it works
     public static void CountGrades(ArrayList<Integer> input_array ){
         int amount = input_array.get(0);
         int lowerBoundary = 0;
