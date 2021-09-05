@@ -24,13 +24,19 @@ public class Cs232Lab2 {
     int sixGroup= 0;
     int sevenGroup= 0;
     int eightGroup= 0;
+    static ArrayList<Integer>scoreResult= new ArrayList<Integer>();
       public static void main(String[] args) {
-       File inputFile = new File("lab2_input-1.txt");
-       ArrayList<Integer>numbers = readFileIntoArrayList();
+        File inputFile = new File("lab2_input-1.txt");
+        ArrayList<Integer>numbers = readFileIntoArrayList();
+        for(int i = 0;i<9; i++){
+            scoreResult.add(0);
+        }
        
        
-       
-        
+        CountGrades(numbers);
+        for (int j =0; j < scoreResult.size(); j++){
+            System.out.println(scoreResult.get(j));
+        }
     }
     public static ArrayList<Integer> readFileIntoArrayList(){
         ArrayList<Integer>numbers = new ArrayList<Integer>();
@@ -46,7 +52,7 @@ public class Cs232Lab2 {
         //System.out.println(temp);
         }
         catch(FileNotFoundException e){
-            System.out.println("An error has occured");
+            System.out.println("File not Found!!");
             e.printStackTrace();
         }
         catch(NoSuchElementException e){
@@ -59,14 +65,19 @@ public class Cs232Lab2 {
         int amount = input_array.get(0);
         int lowerBoundary = 0;
         int upperBoundary  = 24;
-        int tempcounter = 0;
         for(int i = 1; i <= amount; i++){
-            
+            lowerBoundary = 0;
+            upperBoundary  = 24;
             for(int j = 0; j < 8; j++ ){
-                
+                if(input_array.get(i)>= lowerBoundary && input_array.get(i) <= upperBoundary){
+                    int temp = scoreResult.get(j);
+                    temp+=1;
+                    scoreResult.set(j, temp);
+                }
+                lowerBoundary +=24;
+                upperBoundary +=24;
             }
        
-
 
         }
 
