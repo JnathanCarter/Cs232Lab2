@@ -1,7 +1,4 @@
-/*
 
-
- */
 package cs232lab2;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -15,18 +12,10 @@ import java.util.ArrayList;
  */
 public class Cs232Lab2 {
     static File inputFile = new File("lab2_input-1.txt");
-    int num_items = 0;
-    int firstGroup= 0;
-    int secondGroup= 0;
-    int thirdGroup= 0;
-    int forthGroup= 0;
-    int fiveGroup= 0;
-    int sixGroup= 0;
-    int sevenGroup= 0;
-    int eightGroup= 0;
+    
     static ArrayList<Integer>scoreResult= new ArrayList<Integer>();
       public static void main(String[] args) {
-        File inputFile = new File("lab2_input-1.txt");
+        //File inputFile = new File("lab2_input-1.txt");
         ArrayList<Integer>numbers = readFileIntoArrayList();
         for(int i = 0;i<8; i++){
             scoreResult.add(0);
