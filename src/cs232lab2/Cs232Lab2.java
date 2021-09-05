@@ -28,7 +28,7 @@ public class Cs232Lab2 {
       public static void main(String[] args) {
         File inputFile = new File("lab2_input-1.txt");
         ArrayList<Integer>numbers = readFileIntoArrayList();
-        for(int i = 0;i<9; i++){
+        for(int i = 0;i<8; i++){
             scoreResult.add(0);
         }
        
@@ -74,8 +74,14 @@ public class Cs232Lab2 {
                     temp+=1;
                     scoreResult.set(j, temp);
                 }
-                lowerBoundary +=24;
-                upperBoundary +=24;
+                lowerBoundary +=25;
+                if(j == 6){
+                    upperBoundary +=26;
+                }
+                else{
+
+                    upperBoundary +=25;
+                }
             }
        
 
