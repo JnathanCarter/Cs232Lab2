@@ -16,9 +16,19 @@ import java.util.ArrayList;
 public class Cs232Lab2 {
     static File inputFile = new File("lab2_input-1.txt");
     int num_items = 0;
-    public static void main(String[] args) {
+    int firstGroup= 0;
+    int secondGroup= 0;
+    int thirdGroup= 0;
+    int forthGroup= 0;
+    int fiveGroup= 0;
+    int sixGroup= 0;
+    int sevenGroup= 0;
+    int eightGroup= 0;
+      public static void main(String[] args) {
        File inputFile = new File("lab2_input-1.txt");
        ArrayList<Integer>numbers = readFileIntoArrayList();
+       
+       
        
         
     }
@@ -44,5 +54,22 @@ public class Cs232Lab2 {
         }   
         return numbers;
     }   
+
+    public static void CountGrades(ArrayList<Integer> input_array ){
+        int amount = input_array.get(0);
+        int lowerBoundary = 0;
+        int upperBoundary  = 24;
+        int tempcounter = 0;
+        for(int i = 1; i <= amount; i++){
+            
+            for(int j = 0; j < 8; j++ ){
+                
+            }
+       
+
+
+        }
+
+    } 
 }
 
