@@ -7,9 +7,15 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 /**
- * 
- * @author johnc
+ * CS 232-002-11905 Lab 2
+ * Student Id: 001220408
+ * @author Jonathan Carter     
+ * This program reads a file named "lab2_input.txt" then read all the grades
+ * and counts up the number of students having scores in each of the following 
+ * ranges: 0-24, 25-49, 50-74, 75-99, 100-124, 125-149, 150-174, and 175-200.
+ * Finally, the program outputs the score ranges and the number of scores within each range.
  */
+
 public class Cs232Lab2 {
     static File inputFile = new File("lab2_input-1.txt");
     
@@ -39,8 +45,6 @@ public class Cs232Lab2 {
         System.out.println("[125-149]:"+scoreResult.get(5));
         System.out.println("[150-174]:"+scoreResult.get(6));
         System.out.println("[175-200]:"+scoreResult.get(7));
-       
-       
        
     }
     /**
