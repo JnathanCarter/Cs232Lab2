@@ -1,6 +1,7 @@
 # Cs232Lab2
 - Simple java program
 - Reads data from ".txt" file and Counts the numbers of grades in specific scores ranges
+- Second Lab Assignment CS 232 Computer Programmin II
 
 # Description
 
