@@ -10,3 +10,5 @@ The program starts by opening the input file "lab2_input_1.txt" , reading the da
 # Code Example
 
 ![ScreenshotOutput](https://user-images.githubusercontent.com/89806393/135565394-4b9457a9-4853-471e-8930-0170b7ebe421.png)
+# Contact Information
+For inquiries or suggestions for the program please contact jcarter20@stu.jsu.edu
