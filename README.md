@@ -8,3 +8,4 @@ This program opens a file named "lab2_input.txt" (lab2_input.txt  download), whi
 
 # Code Example
 
+![ScreenshotOutput](https://user-images.githubusercontent.com/89806393/135565394-4b9457a9-4853-471e-8930-0170b7ebe421.png)
